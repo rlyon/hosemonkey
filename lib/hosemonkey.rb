@@ -1,5 +1,10 @@
+require "nokogiri"
 require "hosemonkey/version"
 
 module Hosemonkey
-  # Your code goes here...
+  
+end
+
+Dir[File.join('./lib/hosemonkey/ext', '*.rb')].each do |ext|
+  require ext
 end
