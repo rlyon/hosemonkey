@@ -16,6 +16,6 @@ describe "Time monkey: " do
   it "to_yearmonth should return the correct value" do
     # Converts to gmt
     Time.stubs(:now).returns(Time.mktime(1970,1,1,0,0,0))
-    Time.now.to_yearmonth.should == "197001"
+    Time.now.to_short.should == "197001"
   end
 end
